@@ -2,21 +2,21 @@
 
 import Image from "next/image";
 
-const navItems = [
-  "스토어",
-  "Mac",
-  "iPad",
-  "iPhone",
-  "Watch",
-  "Vision",
-  "AirPods",
-  "TV 및 홈",
-  "엔터테인먼트",
-  "액세서리",
-  "고객지원",
-];
-
 export default function Header() {
+  const navItems = [
+    "스토어",
+    "Mac",
+    "iPad",
+    "iPhone",
+    "Watch",
+    "Vision",
+    "AirPods",
+    "TV 및 홈",
+    "엔터테인먼트",
+    "액세서리",
+    "고객지원",
+  ];
+
   return (
     <header className="text-sm">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-11">
