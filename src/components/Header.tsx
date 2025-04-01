@@ -2,6 +2,20 @@
 
 import Image from "next/image";
 
+const navItems = [
+  "스토어",
+  "Mac",
+  "iPad",
+  "iPhone",
+  "Watch",
+  "Vision",
+  "AirPods",
+  "TV 및 홈",
+  "엔터테인먼트",
+  "액세서리",
+  "고객지원",
+];
+
 export default function Header() {
   return (
     <header className="text-sm">
@@ -16,17 +30,13 @@ export default function Header() {
               className="h-auto w-6"
             />
           </a>
-          <a href="#">스토어</a>
-          <a href="#">Mac</a>
-          <a href="#">iPad</a>
-          <a href="#">iPhone</a>
-          <a href="#">Watch</a>
-          <a href="#">Vision</a>
-          <a href="#">AirPods</a>
-          <a href="#">TV 및 홈</a>
-          <a href="#">엔터테인먼트</a>
-          <a href="#">액세서리</a>
-          <a href="#">고객지원</a>
+
+          {navItems.map((item, index) => (
+            <a key={index} href="#" className="hover:opacity-80">
+              {item}
+            </a>
+          ))}
+
           <a href="#">
             <Image
               src="/search.svg"
@@ -36,6 +46,7 @@ export default function Header() {
               className="h-auto w-6"
             />
           </a>
+
           <a href="#">
             <Image src="/bag.svg" alt="bag icon" width={22} height={22} />
           </a>
