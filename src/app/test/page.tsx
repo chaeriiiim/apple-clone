@@ -5,9 +5,13 @@ import FeatureHero from "@/components/common/FeatureHero";
 
 export default function page() {
   return (
-    <main className="min-h-screen p-10">
+    <main className="w-screen">
       <h1 className="text-xl font-bold mb-4">🧪 테스트 페이지</h1>
-      <FeatureHero className="w-[100%] h-[690px] border boreder-black">
+      <FeatureHero
+        imageSrc="/FeatureImage.svg"
+        alt="Feature Image"
+        className=" h-[690px]"
+      >
         <Button
           buttonType="button"
           onClick={() => console.log("clicked")}
