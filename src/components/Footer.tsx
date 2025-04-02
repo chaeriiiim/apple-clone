@@ -111,6 +111,14 @@ export default function Footer() {
     ],
   ];
 
+  const footerLinks = [
+    { text: "개인정보 처리 방침", href: "#" },
+    { text: "웹 사이트 이용 약관", href: "#" },
+    { text: "판매 및 환불", href: "#" },
+    { text: "법적 고지", href: "#" },
+    { text: "사이트 맵", href: "#" },
+  ];
+
   return (
     <footer className="bg-[#f5f5f7] text-xs text-gray-700 py-10">
       <section className="flex flex-col items-center gap-y-4">
@@ -146,12 +154,14 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="m-[10px]">
-          <p>
-            다양한 쇼핑 방법: <a href="#">Apple Store를 방문하거나</a>,
-            <a href="#">리셀러</a>를 찾아보거나,<a href="#">080-330-8877</a>
-            번으로 전화하세요.
-          </p>
+        <div className=" flex flex-col items-center ">
+          <div className="m-[10px] w-[1200px] pl-[16px]">
+            <p className="mt-[20px]">
+              다양한 쇼핑 방법: <a href="#">Apple Store를 방문하거나</a>,
+              <a href="#">리셀러</a>를 찾아보거나,<a href="#">080-330-8877</a>
+              번으로 전화하세요.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -159,7 +169,33 @@ export default function Footer() {
         <hr className="w-full h-[1px] bg-gray-300 border-0 my-8" />
       </div>
 
-      <section></section>
+      <section className="flex flex-col items-center gap-y-4 ">
+        <div className="w-[1200px] pl-[16px] ">
+          <div className="flex flex-row flex-wrap gap-x-4 text-[#8D8D8F] mb-[20px] text-[13px]">
+            <p className="whitespace-nowrap">
+              Copyright © 2025 Apple Inc. 모든 권리 보유.
+            </p>
+            <div className="flex flex-wrap gap-x-2 whitespace-nowrap">
+              {footerLinks.map((link, index) => (
+                <a key={index} href={link.href}>
+                  {link.text}
+                  {index < footerLinks.length - 1 && " |"}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="w-[1200px] ">
+            <p className="text-[#8D8D8F] whitespace-pre-line">
+              애플코리아 유한회사 | 대표이사 : Mark_Lee(마크리) | 주소 :
+              서울특별시 강남구 영동대로 517 | 전화 : 080-333-4000 |{" "}
+              <a href="#">http://support.apple.com/ko-kr</a> | 사업자 등록번호 :
+              120-81-84429 | <br />
+              통신판매업신고번호 : 제2011-서울강남-00810호 | 호스팅 서비스 제공
+              : Apple Inc. | <a href="#">사업자정보</a>
+            </p>
+          </div>
+        </div>
+      </section>
     </footer>
   );
 }
