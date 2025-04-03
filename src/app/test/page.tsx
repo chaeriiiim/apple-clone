@@ -1,14 +1,14 @@
 "use client";
 
-import Button from "@/components/common/Button";
-import FeatureHero from "@/components/common/FeatureHero";
+// import Button from "@/components/common/Button";
+// import FeatureHero from "@/components/common/FeatureHero";
 
 export default function page() {
   return (
     <main className="w-screen">
       <h1 className="text-xl font-bold mb-4">🧪 테스트 페이지</h1>
       <div className="mt-[13px]">
-        <FeatureHero
+        {/* <FeatureHero
           imageSrc="/FeatureImage.svg"
           alt="Feature Image"
           className=" h-[690px] "
@@ -20,7 +20,7 @@ export default function page() {
           >
             더 알아보기
           </Button>
-        </FeatureHero>
+        </FeatureHero> */}
       </div>
     </main>
   );
