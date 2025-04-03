@@ -14,7 +14,7 @@ export default function Main() {
         <Button
           buttonType="button"
           onClick={() => console.log("clicked!")}
-          className="pl-[15px] pr-[15px] pt-[11px] pb-[11px]  w-[114px] h-[44px] mt-[20px]"
+          className="pl-[15px] pr-[15px] pt-[11px] pb-[11px]  w-[114px] h-[44px] mt-[50px]"
         >
           더 알아보기
         </Button>

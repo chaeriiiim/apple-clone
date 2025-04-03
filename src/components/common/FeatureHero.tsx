@@ -14,10 +14,10 @@ export default function FeatureHero({
   children,
 }: FeatureHeroProps) {
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`relative w-[100%] h-[690px] ${className}`}>
       <img src={imageSrc} alt={alt} className="w-full h-auto object-cover" />
       {children && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute top-[400px] left-[50%] -translate-x-1/2 z-10">
           {children}
         </div>
       )}
