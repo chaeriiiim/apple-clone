@@ -14,7 +14,7 @@ export default function FeatureHero({
   children,
 }: FeatureHeroProps) {
   return (
-    <div className={`w-screen ${className}`}>
+    <div className={`w-full ${className}`}>
       <img src={imageSrc} alt={alt} className="w-full h-auto object-cover" />
       {children && (
         <div className="absolute inset-0 flex items-center justify-center">

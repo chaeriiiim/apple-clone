@@ -5,7 +5,7 @@ import FeatureHero from "../common/FeatureHero";
 
 export default function Main() {
   return (
-    <main className="w-screen">
+    <main className="w-full mx-auto">
       <FeatureHero
         imageSrc="/FeatureImage.svg"
         alt="Feature Image"
